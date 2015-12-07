@@ -1,0 +1,222 @@
+/* all */
+.controlstyler, .controlstyler * {
+	margin: 0px;
+	padding: 0px;
+}
+
+input.controlstyler[type="text"]::-ms-clear {
+	display: none;
+}
+
+/* disabled */
+.controlstyler-dc-disabled {
+	opacity: 0.5;
+}
+.controlstyler-dc-disabled
+, .controlstyler-dc-disabled *{
+	cursor: default !important;
+}
+
+/* checkbox */
+.controlstyler[data-controlstyler-type="checkbox"] {
+	display: inline-block;
+	cursor: pointer;
+	overflow: hidden;
+	-webkit-user-select: none;
+}
+.controlstyler[data-controlstyler-type="checkbox"] .controlstyler-0-c-wrapper{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+	transition-property: left;
+}
+.controlstyler[data-controlstyler-type="checkbox"] .controlstyler-0-c-wrapper>*{
+	position: absolute;
+}
+.controlstyler[data-controlstyler-type="checkbox"] .controlstyler-0-c-checked{
+	top: 0px;
+	left: 0px;
+	height: 100%;
+}
+.controlstyler[data-controlstyler-type="checkbox"] .controlstyler-0-c-toogle{
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	border-radius: 50%;
+}
+
+/* checkbox default class */
+.controlstyler-0-dc {
+	background : #988;
+	box-shadow : 0 0 3px rgba(0,0,0,0.5);
+}
+.controlstyler-0-dc .controlstyler-0-c-wrapper{
+	background : #0c3;
+}
+.controlstyler-0-dc .controlstyler-0-c-wrapper>*{
+}
+.controlstyler-0-dc .controlstyler-0-c-checked{
+	background: url(../img/controlstyler-check.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 50%;
+}
+.controlstyler-0-dc .controlstyler-0-c-toogle{
+	background : #fcc;
+}
+
+/* resizabletextbox */
+.controlstyler[data-controlstyler-type="resizabletextbox"]{
+	display: inline-block;
+}
+
+/* resizabletextbox default class */
+.controlstyler-1-dc {
+	padding-left: 3px;
+	padding-right: 3px;
+	border: 1px solid #000;
+	border-radius: 3px;
+}
+
+/* wholenumber */
+.controlstyler[data-controlstyler-type="wholenumber"]{
+	display: inline-block;
+}
+.controlstyler[data-controlstyler-type="wholenumber"] .controlstyler-2-c-number{
+	display: inline-table;
+	vertical-align: top;
+}
+.controlstyler[data-controlstyler-type="wholenumber"] .controlstyler-2-c-number>*{
+	display: table-row;
+}
+.controlstyler[data-controlstyler-type="wholenumber"] .controlstyler-2-c-number>*>*{
+	display: table-cell;
+}
+.controlstyler[data-controlstyler-type="wholenumber"] .controlstyler-2-c-values>*{
+	text-align: center;
+}
+.controlstyler[data-controlstyler-type="wholenumber"] .controlstyler-2-c-sign{
+}
+.controlstyler[data-controlstyler-type="wholenumber"] .controlstyler-2-c-enabled-sign{
+	cursor: pointer;
+	transition-property: background;
+}
+.controlstyler[data-controlstyler-type="wholenumber"]:not([data-controlstyler-disabled="true"]) .controlstyler-2-c-enabled-sign:hover{
+}
+.controlstyler[data-controlstyler-type="wholenumber"]:not([data-controlstyler-disabled="true"]) .controlstyler-2-c-enabled-sign:active{
+}
+.controlstyler[data-controlstyler-type="wholenumber"] .controlstyler-2-c-disabled-sign{
+}
+.controlstyler[data-controlstyler-type="wholenumber"] .controlstyler-2-c-numeral{
+}
+.controlstyler[data-controlstyler-type="wholenumber"] .controlstyler-2-c-buttons>*{
+}
+.controlstyler[data-controlstyler-type="wholenumber"] .controlstyler-2-c-button{
+}
+.controlstyler[data-controlstyler-type="wholenumber"] .controlstyler-2-c-button>*{
+	height: 100%;
+	width: 100%;
+}
+.controlstyler[data-controlstyler-type="wholenumber"] .controlstyler-2-c-enabled-button{
+	cursor: pointer;
+	transition-property: background;
+}
+.controlstyler[data-controlstyler-type="wholenumber"]:not([data-controlstyler-disabled="true"]) .controlstyler-2-c-enabled-button:hover{
+}
+.controlstyler[data-controlstyler-type="wholenumber"]:not([data-controlstyler-disabled="true"]) .controlstyler-2-c-enabled-button:active{
+}
+.controlstyler[data-controlstyler-type="wholenumber"] .controlstyler-2-c-disabled-button{
+}
+.controlstyler[data-controlstyler-type="wholenumber"] .controlstyler-2-c-button-up{
+}
+.controlstyler[data-controlstyler-type="wholenumber"] .controlstyler-2-c-button-up>*{
+}
+.controlstyler[data-controlstyler-type="wholenumber"] .controlstyler-2-c-button-down{
+}
+.controlstyler[data-controlstyler-type="wholenumber"] .controlstyler-2-c-button-down>*{
+}
+.controlstyler[data-controlstyler-type="wholenumber"] .controlstyler-2-c-numeral-system{
+}
+
+
+/* wholenumber default class */
+.controlstyler-2-dc{
+	color: #fff;
+
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	font-stretch: normal;
+
+	white-space: normal;
+	word-spacing: 0px;
+	line-height: normal;
+}
+.controlstyler-2-dc .controlstyler-2-c-number{
+	border-spacing: 1px 0px;
+	margin-left: -1px;
+	margin-right: -1px;
+}
+.controlstyler-2-dc .controlstyler-2-c-number>*{
+}
+.controlstyler-2-dc .controlstyler-2-c-number>*>*{
+	padding-left: 1px;
+	padding-right: 1px;
+}
+.controlstyler-2-dc .controlstyler-2-c-values>*{
+	background: #2f2f2f;
+}
+.controlstyler-2-dc .controlstyler-2-c-sign{
+}
+.controlstyler-2-dc .controlstyler-2-c-enabled-sign{
+	background: #2f2f3f;
+	transition-duration: .2s;
+}
+.controlstyler-2-dc:not([data-controlstyler-disabled="true"]) .controlstyler-2-c-enabled-sign:hover{
+	background: #2f4f2f;
+}
+.controlstyler-2-dc:not([data-controlstyler-disabled="true"]) .controlstyler-2-c-enabled-sign:active{
+	background: #2f2f4f;
+}
+.controlstyler-2-dc .controlstyler-2-c-disabled-sign{
+	background: #4f2f2f;
+}
+.controlstyler-2-dc .controlstyler-2-c-numeral{
+}
+.controlstyler-2-dc .controlstyler-2-c-buttons>*{
+}
+.controlstyler-2-dc .controlstyler-2-c-button{
+}
+.controlstyler-2-dc .controlstyler-2-c-button>*{
+}
+.controlstyler-2-dc .controlstyler-2-c-enabled-button{
+	transition-duration: .2s;
+	background: #7f0;
+}
+.controlstyler-2-dc:not([data-controlstyler-disabled="true"]) .controlstyler-2-c-enabled-button:hover{
+	background: #fc0;
+}
+.controlstyler-2-dc:not([data-controlstyler-disabled="true"]) .controlstyler-2-c-enabled-button:active{
+	background: #f70;
+}
+.controlstyler-2-dc .controlstyler-2-c-disabled-button{
+	background: #777;
+}
+.controlstyler-2-dc .controlstyler-2-c-button-up{
+}
+.controlstyler-2-dc .controlstyler-2-c-button-up>*{
+	background: url(../img/spin-button-up.png) center no-repeat;
+	background-size: 70%;
+}
+.controlstyler-2-dc .controlstyler-2-c-button-down{
+}
+.controlstyler-2-dc .controlstyler-2-c-button-down>*{
+	background: url(../img/spin-button-down.png) center no-repeat;
+	background-size: 70%;
+}
+.controlstyler-2-dc .controlstyler-2-c-numeral-system{
+	font-weight: normal;
+}
