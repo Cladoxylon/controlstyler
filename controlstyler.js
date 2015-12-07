@@ -1,4 +1,7 @@
 /**
+ * Authored by Cladoxylon
+ * https://github.com/Cladoxylon
+ *
  * Copyright (c) 2015 Cladoxylon
  * License: The MIT License (MIT)
  * http://opensource.org/licenses/MIT
